@@ -1,0 +1,36 @@
+.icon {
+  display: inline-block;
+  fill: #000;
+}
+
+/*
+ * Icon sizes
+ */
+
+.icon--xs {
+  width: 9px;
+  height: 9px;
+}
+
+.icon--sm {
+  width: 16px;
+  height: 16px;
+}
+
+.icon--md {
+  width: 24px;
+  height: 24px;
+}
+
+.icon--lg {
+  width: 36px;
+  height: 36px;
+}
+
+.fill-black {
+  fill: #000;
+}
+
+.fill-white {
+  fill: #fff;
+}

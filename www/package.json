@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "build": "bankai build index.js",
+    "now-build": "npm run build",
     "create": "choo-scaffold",
     "inspect": "bankai inspect index.js",
     "start": "bankai start index.js",
@@ -13,6 +14,8 @@
   "dependencies": {
     "choo": "^6.13.1",
     "choo-service-worker": "^2.4.0",
+    "icon-element": "^1.0.0",
+    "nanocomponent": "^6.5.2",
     "sheetify": "^7.3.3",
     "tachyons": "^4.11.1"
   },

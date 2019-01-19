@@ -1,0 +1,12 @@
+{
+  "public": true,  
+  "version": 2,
+  "name": "auggod",
+  "builds": [
+    { "src": "www/package.json", "use": "@now/static-build" }
+  ],
+  "routes": [
+    { "src": "/api/(.*)", "dest": "/api/$1" },
+    { "src": "/(.*)", "headers": { "Service-Worker-Allowed": "/" }, "dest": "/www/$1" }
+  ]
+}
