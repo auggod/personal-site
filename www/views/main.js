@@ -9,7 +9,7 @@ function view (state, emit) {
   if (state.title !== TITLE) emit(state.events.DOMTITLECHANGE, TITLE)
 
   return html`
-    <section id="lists" class="flex flex-column ma4">
+    <section id="lists" class="pa3 flex flex-column ma4">
       <section id="projects">
         <h2>Projects</h2>
         ${state.cache(Links, 'projects').render({
