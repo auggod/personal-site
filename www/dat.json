@@ -1,0 +1,13 @@
+{
+  "url": "dat://6408d410c6fe9e9933818434c3e95a9c25f5d5d2740cc12dc3fc47448510765a/",
+  "title": "Augustin Godiscal",
+  "description": "My personal site",
+  "links": {
+    "payment": [
+      {
+        "href": "https://liberapay.com/auggod",
+        "type": "text/html"
+      }
+    ]
+  }
+}

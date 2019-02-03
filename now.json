@@ -3,10 +3,13 @@
   "version": 2,
   "name": "auggod",
   "builds": [
-    { "src": "www/package.json", "use": "@now/static-build" }
+    { "src": "www/src/package.json", "use": "@now/static-build" },
+    { "src": "www/.well-known/**", "use": "@now/static" }
   ],
   "routes": [
-    { "src": "/api/(.*)", "dest": "/api/$1" },
-    { "src": "/(.*)", "headers": { "Service-Worker-Allowed": "/" }, "dest": "/www/$1" }
-  ]
+    { "src": "/(.*)", "headers": { "Service-Worker-Allowed": "/" }, "dest": "/www/$1" },
+    { "src": "/.well-known/(.*)", "dest": "/www/.well-known/$1" }
+  ],
+  "alias": "auggod.tech",
+  "regions": ["all"]
 }
